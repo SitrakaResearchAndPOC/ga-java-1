@@ -26,8 +26,12 @@ jobs:
       run: ./gradlew build
 
   publish :
+    needs: build-java
     runs-on: ubuntu-latest    
     steps:
+    - name: Lancement de publication 
+      run: echo "lancons la publication de l'image"
+
     - name : Lancement de publish
       run: echo "publication de code" 
       
