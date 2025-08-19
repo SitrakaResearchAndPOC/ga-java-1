@@ -24,3 +24,10 @@ jobs:
 
     - name: Build with Gradle
       run: ./gradlew build
+
+  publish :
+    runs-on: ubuntu-latest    
+    steps:
+    - name : Lancement de publish
+      run: echo "publication de code" 
+      
