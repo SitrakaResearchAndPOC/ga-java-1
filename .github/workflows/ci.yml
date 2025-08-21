@@ -23,9 +23,8 @@ jobs:
 
     - name: Build with Gradle
       run: ./gradlew build
-      
-    - uses: mr-smithers-excellent/docker-build-push@v6
-      name: Build & push Docker image
+    - name: build an run  
+      uses: mr-smithers-excellent/docker-build-push@v6
       with:
         image: sitrakaresearchandpoc/image_java_build
         tags: v1, latest
