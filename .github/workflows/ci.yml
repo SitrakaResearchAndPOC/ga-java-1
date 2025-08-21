@@ -1,4 +1,4 @@
-name: Java CI with Gradle
+name: Java CI with Gradle / Code M2
 
 on:
   push:
@@ -8,7 +8,6 @@ on:
 
 jobs:
   build-java:
-
     runs-on: ubuntu-latest    
     steps:
     - name : Telechargement du code source
