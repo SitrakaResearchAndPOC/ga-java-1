@@ -28,8 +28,11 @@ jobs:
     needs: build-java
     runs-on: ubuntu-latest    
     steps:
-    - name: Lancement de publication 
-      run: echo "lancons la publication de l'image"
+    - name: Lancement de docker ps
+      run: | 
+        echo "lancons la publication de l'image"
+        docker ps
+      
 
     - name : Lancement de publish
       run: echo "publication de code" 
